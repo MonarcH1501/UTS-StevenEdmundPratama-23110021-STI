@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Steve.<span>X</span></a>
+            <div class="bx bx-menu" id="menu-icon">
+                <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+            </div>
+            <ul class="navlist" id="myTopnav">
+                <li><a href="index.html">Home</a></li>
+                <li><a>Services</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn">About
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <ul class="dropdown-content">
+                        <li><a href="background.html">Background</a></li>
+                        <li><a href="pendidikan.html">Pendidikan</a></li>
+                        <li><a href="pekerjaan.html">Pekerjaan</a></li>
+                        <li><a href="prestasi.html">Prestasi</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <button class="dropbtn">Kampus
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <ul class="dropdown-content">
+                        <li><a href="itbss.html">ITBSS</a></li>
+                        <li><a href="sti.html">STI</a></li>
+                    </ul>
+                </li>
+            </ul> 
+    </header>
+    <div class="wrapper">
+    <section class="content1-services" id="home">
+        <div class="content1">
+          <h4>Some of</h4>
+          <h1><span>My Services</span></h1>
+          <a href="#services" class="button">More Details</a>
+        </div>
+        <div class="slideshow-container">
+              <div class="slide fade">
+                <img src="pct/mobile dev.jpeg" style="width:100%">
+              </div>
+            
+              <div class="slide fade">
+                <img src="pct/web dev.jpeg" style="width:100%">
+              </div>
+
+              <div class="slide fade">
+                <img src="pct/data analys.jpeg" style="width:100%">
+              </div>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="center-services">
+            <h2>My <span>Services</span></h2>
+        </div>
+        <div class="services-content">
+            <div class="box">
+                <img src="#" alt="">
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Sapiente perferendis eveniet saepe culpa adipisci sit, 
+                     ad illum perspiciatis officiis assumenda fugiat nostrum, 
+                     possimus quod, excepturi expedita ipsam. Vitae, minus doloremque.
+                    </p>
+                    <a class="button-service" id="web">More Details</a>
+            </div>
+            <div class="box">
+                <img src="#" alt="">
+                <h3>Mobile Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Sapiente perferendis eveniet saepe culpa adipisci sit, 
+                     ad illum perspiciatis officiis assumenda fugiat nostrum, 
+                     possimus quod, excepturi expedita ipsam. Vitae, minus doloremque.
+                    </p>
+                   <a class="button-service" id="mobile">More Details</a>
+            </div>
+            <div class="box">
+                <img src="#" alt="">
+                <h3>Data Analyst</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Sapiente perferendis eveniet saepe culpa adipisci sit, 
+                     ad illum perspiciatis officiis assumenda fugiat nostrum, 
+                     possimus quod, excepturi expedita ipsam. Vitae, minus doloremque.
+                    </p>
+                    <a class="button-service" id="data">More Details</a>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <p>&copy; 23110021-Steven Edmund Pratama-ITBSS.</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

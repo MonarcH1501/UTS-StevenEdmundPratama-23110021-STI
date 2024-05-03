@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error 404 - Page Not Found</title>
+    <style>
+        :root{
+        --text-color:#fff;
+        --bg-color:#1b1f24;
+        --second-bg-color:#22282f;
+        --main-color:#13bbff;
+        --other-color:#c3cad5;
+        --box-color:#2d343f;
+
+        --h1-font : 4.5rem;
+        --h2-font : 2.5rem;
+        --p-font : 1rem;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container-error {
+            max-width: 600px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #ff6347;
+        }
+
+        p {
+            color: #333;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .button{
+        display: inline-block;
+        padding: 11px 26px;
+        background: var(--main-color);
+        color: var(--bg-color);
+        margin-right: 10px;
+        border: 2px solid var(--main-color);
+        border-radius: 20px;
+        font-size: 15px;
+        font-weight: 600;
+        transition: all .50s ease;  
+       }
+       .button:hover{
+        background: transparent;
+        color: var(--main-color);
+        box-shadow: 10px 0px 10px var(--main-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container-error">
+        <h1>Error 404 - Page Not Found</h1>
+        <p>Belum ada yg Bisa di Banggakan :( </p>
+        <p>wkwkwk canda click aja tuh tombol di bawah</p>
+        <a href="index.html" class="button" id="myLink">Click</a>
+    </div>
+
+    <script>
+        // Memilih elemen tautan dengan id "myLink"
+        var myLink = document.getElementById("myLink");
+
+        // Menambahkan event listener untuk klik
+        myLink.addEventListener("click", function(event) {
+            // Memunculkan konfirmasi
+            var confirmed = confirm("Maaf ya tidak sesuai ekspektasi, Tapi Emang Belum ada hehe silahkan kembali ke homepage");
+
+            // Jika pengguna mengonfirmasi
+            if (!confirmed) {
+                // Batalkan perilaku default dari tautan
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>

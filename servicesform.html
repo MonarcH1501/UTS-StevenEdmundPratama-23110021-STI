@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+      <div class="container">
+        <h2>Form Pemesanan </h2>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="barang">Services</label>
+            <select id="barang" name="barang" required>
+              <option value="">Services Avaliable</option>
+              <option value="Web Development services">Web Development</option>
+              <option value="Mobile Development services">Mobile Development</option>
+              <option value="Data Analyst services">Data analyst</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Pesan Barang">
+          </div>
+        </form>
+      </div>
+      
+  <script src="form.js"></script>  
+</body>
+</html>
